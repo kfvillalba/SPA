@@ -1,71 +1,81 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;    
-  }
-  
-  td, th {
-    border: 1px solid #ddd;
-    padding: 8px;
-    width: 100%;
-  }
-  
-  tr:nth-child(even){background-color: #f2f2f2;}
-  
-  tr:hover {background-color: #ddd;}
-  
-  th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #04AA6D;
-    color: white;
-  }
-
-  label{
-    width: 160px;
-    display: inline-block;
-    text-align: center;    
-  }
-  
-  input {
-      width: 150px;
-  }
-
-  
-  label:hover{
-    background-color: beige;
-
-  }
-  
-  .Formulario{
-    text-align: center;
-    margin: auto;       
-    display: flex;
-    justify-content: center; 
-  }
-  
-  .Contenedor{
-    width: fit-content;
-    border: 1px solid rgb(0, 0, 0);
-    padding: 10px 10px 10px;   
-    text-align: center;    
-  }
-  
-  
-  h1 {
-    text-align: center;
-    color: red;
-  }
-
-  #Lorem{
-    text-align: center;
-    color: rgb(0, 0, 0);    
-  }
-
-  h3{
-    color: black;
-  }
-  button:hover{
-    background-color: rgb(245, 90, 0);
-    size: 50px;
-    cursor: pointer;    
-  }
+            /*GENERAL*/
+            *{
+              font-family: Arial, Helvetica, sans-serif;    
+          }
+            
+                   /*TABLAS*/
+           td, th {
+              border: 1px solid #ddd;
+              padding: 8px;
+              width: 100%;
+          }
+      
+           th {
+              padding-top: 12px;
+              padding-bottom: 12px;
+              text-align: left;
+              background-color: #04AA6D;
+              color: white;
+          }
+      
+           tr:nth-child(even){background-color: #f2f2f2;}
+        
+           tr:hover {background-color: #ddd;} 
+        
+                  /*DIVS*/
+      
+          .Formulario{
+              text-align: center;
+              margin: auto;       
+              display: flex;
+              justify-content: center;  
+          }
+            
+            .Contenedor{
+              width: fit-content;
+              border: 1px solid rgb(0, 0, 0);
+              padding: 10px 10px 10px;   
+              justify-content: center;  
+              align-items: center;
+              text-align: center;
+              margin: auto;
+          }
+      
+                  /*LABELS*/
+      
+           label{
+              width: 100px;
+              display: inline-block;
+              text-align: left;
+          }
+           label:hover{
+              background-color: beige;
+          }
+      
+      
+                  /*INPUTS*/
+          
+           input {
+              width: 150px;
+          }
+      
+           button:hover{
+              background-color: rgb(245, 90, 0);
+              size: 50px;
+              cursor: pointer;    
+            }
+      
+                  /*TITULOS*/  
+          h1 {
+          text-align: center;
+          color: red;
+        }
+      
+        #Lorem{
+          text-align: center;
+          color: rgb(0, 0, 0);    
+        }
+      
+        h3{
+          color: black;
+        }
