@@ -4,4 +4,6 @@ var Nombre, Apellido, Telefono, Email, Direccion, Fecha;
 var Tabla = document.getElementById("Tabla_Datos_Personales");
 var Boton = document.getElementById("Btn_Enviar")
 var Contador = 1;
-console.log("Java Script Funcionando")
+//console.log("Java Script Funcionando")
+
+Boton.addEventListener("click",Agregar_Elemento_Tabla(),false);
