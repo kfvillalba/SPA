@@ -9,6 +9,7 @@
     <div class="Contenedor">
         <div class="Formulario">
             <h1>AGENDA</h1>
+            <br> <br>
 
             <form class="Datos_Personales">
                 <label for="Nombre">Nombre:</label>
@@ -20,14 +21,14 @@
                 <label for="Telefono">Telefono:</label>
                 <input type="tel" id="Telefono" name="Telefono">
                 <br>
-                <label for="Email">Correo Electronico:</label>
+                <label for="Email">Email:</label>
                 <input type="email" id="Email" name="Email">
                 <br>
                 <label for="Direccion">Direccion:</label>
                 <input type="text" id="Direccion" name="Direccion">
                 <br>
-                <label for="Fecha_Nacimiento">Fecha Nacimeinto</label>
-                <input type="date" id="Fecha_Nacimeinto" name="Fecha_Nacimeinto">
+                <label for="Fecha_Nacimiento">Fecha</label>
+                <input type="date" id="Fecha" name="Fecha">
                 <br>
 
                 <input type="button" value="Enviar">
@@ -60,7 +61,7 @@
                         <td>Calle 49</td>
                         <td>21/12/2000</td>
                         <td>Estudiante</td>
-                        <td> </td>
+                        <td><button class="Btn_Danger" onclick="Eliminar_Fila(this)">Eliminar</button></td>
                     </tr>
 
                 </tbody>
