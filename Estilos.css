@@ -25,6 +25,10 @@
     display: inline-block;
     text-align: center;    
   }
+  
+  input {
+      width: 150px;
+  }
 
   
   label:hover{
