@@ -7,3 +7,7 @@ var Contador = 1;
 //console.log("Java Script Funcionando")
 
 Boton.addEventListener("click",Agregar_Elemento_Tabla(),false);
+
+function Agregar_Elemento_Tabla(){
+    console.log("CLICK");
+}
