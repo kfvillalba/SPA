@@ -3,6 +3,7 @@
 var Nombre, Apellido, Telefono, Email, Direccion, Nota, Fecha;
 var Tabla = document.getElementById("Tabla_Datos_Personales");
 var Btn_Guardar = document.getElementById("Btn_Enviar")
+
 var Contador = 1;
 //console.log("Java Script Funcionando")
 
@@ -19,15 +20,14 @@ function Agregar_A_Tabla(){
     Nota = document.getElementById("Nota").value;
     Direccion = document.getElementById("Direccion").value;
 
-    console.log(Nombre);
-    console.log(Apellido);
-    console.log(Telefono);
-    console.log(Email);
-    console.log(Fecha);
-    console.log(Nota);
-    console.log(Direccion);
+    if (Nombre == "" || Apellido == "" || Direccion == "" || Telefono == "" || Email ==  "") {
+        alert("REVISAR LOS CAMPOS OBLIGATORIOS")
+    }
+    else
+    {
 
-    var Fila = Tabla.insertRow (Contador);
+        
+        var Fila = Tabla.insertRow (Contador);
     var Celda_1 = Fila.insertCell(0);
     var Celda_2 = Fila.insertCell(1);
     var Celda_3 = Fila.insertCell(2);
@@ -36,7 +36,7 @@ function Agregar_A_Tabla(){
     var Celda_6 = Fila.insertCell(5);
     var Celda_7 = Fila.insertCell(6);
     var Celda_8 = Fila.insertCell(7);
-
+    
     Celda_1.innerHTML = Nombre;
     Celda_2.innerHTML = Apellido;
     Celda_3.innerHTML = Telefono;
@@ -44,8 +44,13 @@ function Agregar_A_Tabla(){
     Celda_5.innerHTML = Direccion;
     Celda_6.innerHTML = Fecha;
     Celda_7.innerHTML = Nota;
-    Celda_8.innerHTML = '<button class="Btn_Danger" onclick="Eliminar_Fila(this)">Eliminar</button>';
-
+    Celda_8.innerHTML = '<button class="Btn_Danger" onclick="Eliminar_Fila_Tabla(this)">Eliminar</button>';
+    
     Contador++;
-
+}
+    
+}
+function Eliminar_Fila_Tabla(Fila){
+    Tabla.deleteRow(Fila.parentNode.parentNode.rowIndex);
+    Contador--;
 }
